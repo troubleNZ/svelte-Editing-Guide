@@ -25,20 +25,17 @@ Let it complete and leave this window open in the background. We will use bash a
 
 ## Step 3 - install and run the svelte engine	CMD / PSHELL
 Start cmd prompt or powershell & navigate to the new vite-project folder
-
-    `cd vite-project`
+    cd vite-project
     
 [If you installed cygwin to default location of `c:\cygwin64`, the vite-project will be found in 
  `C:\cygwin64\home\yourprofile\vite-project`]
 
     
-install the svelte project
-
-    `npm install`
+install the svelte project    
+    npm install
 
 then run the toolset with
-
-    `npm run dev`
+    npm run dev
 
 This will install the dev tools 'sed' etc
 
@@ -64,7 +61,7 @@ navigate to the svelte-source folder        (not /src)
 
 Run the _alternate_ nodejs pnpm package manager (pnpm) with the svelte plugin 
 
-    `pnpm run build`
+    pnpm run build
 
 this now compiles. and once complete, the changed files will be listed in the bash summary.
 Now we can copy the changed files [the /html/ directory contents ] back over to your production [live] server ps-hud folder.
