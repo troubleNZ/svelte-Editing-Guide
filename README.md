@@ -1,5 +1,5 @@
 ### ps-hud Editing Guide
- a simple how-to guide on editing and compiling svelte typescript
+ A simple unofficial how-to guide on editing and compiling svelte typescript for Project Sloth ps-hud for QBCore FiveM
 
 # Step 1 - install base tools
     Install nodejs https://nodejs.org/en/
