@@ -24,17 +24,20 @@ Select the svelte-ts optional    [ use arrow keys ]
 Let it complete and leave this window open in the background. We will use bash again in step 4.
 
 ## Step 3 - install and run the svelte engine	CMD / PSHELL
-Start cmd prompt or powershell 
-Navigate to the new vite-project folder
+Start cmd prompt or powershell & navigate to the new vite-project folder
+
     `cd vite-project`
     
 [If you installed cygwin to default location of `c:\cygwin64`, the vite-project will be found in 
  `C:\cygwin64\home\yourprofile\vite-project`]
 
     
+install the svelte project
 
     `npm install`
-then run    
+
+then run the toolset with
+
     `npm run dev`
 
 This will install the dev tools 'sed' etc
@@ -60,6 +63,7 @@ navigate to the svelte-source folder        (not /src)
     cd /cygdrive/driveletter/pathto/ps-hud/svelte-source
 
 Run the _alternate_ nodejs pnpm package manager (pnpm) with the svelte plugin 
+
     `pnpm run build`
 
 this now compiles. and once complete, the changed files will be listed in the bash summary.
