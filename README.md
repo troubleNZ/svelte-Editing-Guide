@@ -1,5 +1,5 @@
 # ps-hud Editing Guide
- A simple unofficial how-to guide on editing and compiling svelte typescript for Project Sloth ps-hud for QBCore FiveM
+ A simple unofficial how-to guide on editing and compiling svelte typescript for Project Sloth ps-hud [https://github.com/Project-Sloth/ps-hud] for QBCore FiveM framework
 
 ## Step 1 - install base tools
 Install nodejs https://nodejs.org/en/
@@ -9,12 +9,13 @@ Install cygwin http://www.cygwin.com/install.html
 ## Step 2 - install nodejs npm/pnpm packages	BASH PROMPT
 
 Open cygwin bash prompt
-Run
-    `npm install -g pnpm`                   [GUIDE https://pnpm.io/installation]
 
-Let it finish.
+install the pnpm package manager            [About https://pnpm.io/]
+Run `npm install -g pnpm`                   [GUIDE https://pnpm.io/installation]
 
-Then run the get initializer for the svelte engine
+Let it finish. (we will use pnpm in step 5)
+
+Then run the initializer for the svelte engine
     `npm init vite`                         [GUIDE https://github.com/sveltejs/template]
 
 Give the project a name. [the default is fine.]
@@ -25,21 +26,20 @@ Let it complete and leave this window open in the background. We will use bash a
 
 ## Step 3 - install and run the svelte engine	CMD / PSHELL
 Start cmd prompt or powershell & navigate to the new vite-project folder
-    cd vite-project
+
+   `CMD  C:\cygwin64\home\yourprofile> cd vite-project`
     
 [If you installed cygwin to default location of `c:\cygwin64`, the vite-project will be found in 
- `C:\cygwin64\home\yourprofile\vite-project`]
+ `C:/cygwin64/home/yourprofile/vite-project`]
 
     
-install the svelte project    
-    npm install
+install the svelte project    `npm install`
 
-then run the toolset with
-    npm run dev
+then run the toolset with     `npm run dev`
 
-This will install the dev tools 'sed' etc
+This will install the dev tools 'sed' etc.
 
-Leave the cmd window open - this is your svelte compiler running in the background
+Leave the cmd window open - this is your svelte typescript compiler running in the background.
 
 ## Step 4 - make your edits to the svelte typescript. 
 ### recommended to use the VS Code svelte addin [https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode]
@@ -57,12 +57,13 @@ directory. remember to save your changes. when you are ready continue to step 5.
 Switch over to the bash prompt
 
 navigate to the svelte-source folder        (not /src)
+```
     cd /cygdrive/driveletter/pathto/ps-hud/svelte-source
-
+```
 Run the _alternate_ nodejs pnpm package manager (pnpm) with the svelte plugin 
-
+```
     pnpm run build
-
+```
 this now compiles. and once complete, the changed files will be listed in the bash summary.
 Now we can copy the changed files [the /html/ directory contents ] back over to your production [live] server ps-hud folder.
 
