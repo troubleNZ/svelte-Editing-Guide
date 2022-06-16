@@ -1,5 +1,8 @@
-# ps-hud Editing Guide
- A simple unofficial how-to guide on editing and compiling svelte typescript for Project Sloth ps-hud [https://github.com/Project-Sloth/ps-hud] for QBCore FiveM framework
+# Svelte Framework Editing Guide
+i noticed that svelte framework is fast becoming a prefered platform to build nui enabled fivem scripts.
+So i put together this simple unofficial how-to guide on setting up your workspace for editing and compiling svelte typescript.  
+
+'myresource' is whatever resouce you're working on that has been built in svelte framework. https://svelte.dev/
 
 ## Step 1 - install base tools
 Install nodejs https://nodejs.org/en/
@@ -44,12 +47,12 @@ Leave the cmd window open - this is your svelte typescript compiler running in t
 ## Step 4 - make your edits to the svelte typescript. 
 ### recommended to use the VS Code svelte addin [https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode]
 
-In Windows Explorer, place a COPY of ps-hud inside your cygwin homedrive holder, we will edit this 
+In Windows Explorer, place a COPY of myresource inside your cygwin homedrive holder, we will edit this 
 one and once we successfully compile, we can copy the changed files [the /html/ directory contents ] 
-back over to your production [live] server ps-hud folder.
+back over to your production [live] server myresource folder.
 
 in your favorite editor (Visual Studio Code obv)
-Edit whatever you need to change in the `C:\cygwin64\home\yourprofile\ps-hud\svelte-source\src` 
+Edit whatever you need to change in the `C:\cygwin64\home\yourprofile\myresource\svelte-source\src` 
 directory. remember to save your changes. when you are ready continue to step 5.
 
 ## Step 5 - compiling your svelte typescript package!
@@ -58,17 +61,17 @@ Switch over to the bash prompt
 
 navigate to the svelte-source folder        (not /src)
 ```
-    cd /cygdrive/driveletter/pathto/ps-hud/svelte-source
+    cd /cygdrive/driveletter/pathto/myresource/svelte-source
 ```
 Run the _alternate_ nodejs pnpm package manager (pnpm) with the svelte plugin 
 ```
     pnpm run build
 ```
 this now compiles. and once complete, the changed files will be listed in the bash summary.
-Now we can copy the changed files [the /html/ directory contents ] back over to your production [live] server ps-hud folder.
+Now we can copy the changed files [the /html/ directory contents ] back over to your production [live] server myresource folder.
 
 ## Step 6. - testing
-
-ensure your ps-hud and log onto your server. i didnt need to clear my cache but i did need to relog.
+if you're not working with fivem resources ignore this step, but otherwise
+ensure your myresource and log onto your server. i didnt need to restart the server nor clear my server cache but i did need to restart the client.
 
 
